@@ -7,50 +7,47 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("29008048"))
+API_HASH = getenv("1b6ac0b75aa562970d3f3d66438bf650")
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("6702810038:AAGpr7j4HRvWClySwmQ-nM6clB3XeJSDkJs")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","iam_daxx")
+OWNER_USERNAME = getenv("OWNER_USERNAME","suraj_saini91")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "YumikooBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Relaxsmusicbot")
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "Yumikoo")
+BOT_NAME = getenv("BOT_NAME" , "Relaxsmusicbot")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "MissYumikoo")
+ASSUSERNAME = getenv("ASSUSERNAME" , "Queenxd91")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://Surajbot:surajbot@surajbot.qv1brhu.mongodb.net/?retryWrites=true&w=majority", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1001802990747))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001944053795))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6691393517))
+OWNER_ID = int(getenv("OWNER_ID", 6460424107))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("relaxsmusicbot")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("••••••••••••••••••••••••••••••••••••")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/DAXXTEAM/DAXXMUSIC",
+    "https://github.com/SURAJKSM/SURAJ",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ALLTYPECC")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/HEROKUFREECC")
-
-# Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/quizbys")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/upscbpscgk")
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
@@ -69,11 +66,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Ge@STRINGSEASO_NBOT2 session from @STRINGSEASO_NBOT
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("BQC4e079t7QiG3tyeNNiTPeF4jcJ7DcO9EUTeWY0RPrCxcxpHcrX6xQrHBLOb_814ah4xSuGGe-sPuNfSKunOWggAo0ZZ0dtdd1OxtgVcYwcGazxweEOTjf8_dntd92PhFbKWIyYOUHWRt18PkmxPM3DyB646SqUtLaddjX_7nyTRPhPMuBU9I4snM40scEgZYkboP-15TbkY339cVT391GCDZE3YBHMBWzpjslI3VEy6AIwO0aqCz7LS6siD6BjcWh1zVxcW0ZODzgAX39xV8w6PrggTcCSBZmudm8xJviPLk9laoSbjWipf82FpMqKGwLmS78Xr51lbn_SiS_8nuJzAAAAAYmuX1IA", None)
+STRING2 = getenv("BQC4e079t7QiG3tyeNNiTPeF4jcJ7DcO9EUTeWY0RPrCxcxpHcrX6xQrHBLOb_814ah4xSuGGe-sPuNfSKunOWggAo0ZZ0dtdd1OxtgVcYwcGazxweEOTjf8_dntd92PhFbKWIyYOUHWRt18PkmxPM3DyB646SqUtLaddjX_7nyTRPhPMuBU9I4snM40scEgZYkboP-15TbkY339cVT391GCDZE3YBHMBWzpjslI3VEy6AIwO0aqCz7LS6siD6BjcWh1zVxcW0ZODzgAX39xV8w6PrggTcCSBZmudm8xJviPLk9laoSbjWipf82FpMqKGwLmS78Xr51lbn_SiS_8nuJzAAAAAYmuX1IA", None)
+STRING3 = getenv("BQC4e079t7QiG3tyeNNiTPeF4jcJ7DcO9EUTeWY0RPrCxcxpHcrX6xQrHBLOb_814ah4xSuGGe-sPuNfSKunOWggAo0ZZ0dtdd1OxtgVcYwcGazxweEOTjf8_dntd92PhFbKWIyYOUHWRt18PkmxPM3DyB646SqUtLaddjX_7nyTRPhPMuBU9I4snM40scEgZYkboP-15TbkY339cVT391GCDZE3YBHMBWzpjslI3VEy6AIwO0aqCz7LS6siD6BjcWh1zVxcW0ZODzgAX39xV8w6PrggTcCSBZmudm8xJviPLk9laoSbjWipf82FpMqKGwLmS78Xr51lbn_SiS_8nuJzAAAAAYmuX1IA", None)
+STRING4 = getenv("BQC4e079t7QiG3tyeNNiTPeF4jcJ7DcO9EUTeWY0RPrCxcxpHcrX6xQrHBLOb_814ah4xSuGGe-sPuNfSKunOWggAo0ZZ0dtdd1OxtgVcYwcGazxweEOTjf8_dntd92PhFbKWIyYOUHWRt18PkmxPM3DyB646SqUtLaddjX_7nyTRPhPMuBU9I4snM40scEgZYkboP-15TbkY339cVT391GCDZE3YBHMBWzpjslI3VEy6AIwO0aqCz7LS6siD6BjcWh1zVxcW0ZODzgAX39xV8w6PrggTcCSBZmudm8xJviPLk9laoSbjWipf82FpMqKGwLmS78Xr51lbn_SiS_8nuJzAAAAAYmuX1IA", None)
+STRING5 = getenv("BQC4e079t7QiG3tyeNNiTPeF4jcJ7DcO9EUTeWY0RPrCxcxpHcrX6xQrHBLOb_814ah4xSuGGe-sPuNfSKunOWggAo0ZZ0dtdd1OxtgVcYwcGazxweEOTjf8_dntd92PhFbKWIyYOUHWRt18PkmxPM3DyB646SqUtLaddjX_7nyTRPhPMuBU9I4snM40scEgZYkboP-15TbkY339cVT391GCDZE3YBHMBWzpjslI3VEy6AIwO0aqCz7LS6siD6BjcWh1zVxcW0ZODzgAX39xV8w6PrggTcCSBZmudm8xJviPLk9laoSbjWipf82FpMqKGwLmS78Xr51lbn_SiS_8nuJzAAAAAYmuX1IA", None)
 
 
 BANNED_USERS = filters.user()
